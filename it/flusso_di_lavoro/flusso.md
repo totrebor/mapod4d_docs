@@ -8,16 +8,16 @@ Qui di seguito il flusso di lavoro utilizzato dalla community. Tale flusso è co
 
 - **prendere il link del repository forkato:** dopo aver forkato il _repository_ principale, comparirà nella lista dei _repositories_ dell'account utente il _repository_ forkato. Accedendo alla pagina potrete copiare il link dall menú a tendina che si aprirà premendo il tasto verde "**Code**".
 
-         https://github.com/<username>/<nome_repository>.git
+         https://github.com/[username]/[nome_repository].git
 
 - **clonare localmente e accedere al repository:** per clonare e accedere vanno utilizzati questi due comandi da terminale (assicurarsi che il terminale sia sulla cartella di lavoro):
 
-        git clone https://github.com/<username>/<nome_repository>.git
-        cd <nome_repository>
+        git clone https://github.com/[username]/[nome_repository].git
+        cd [nome_repository]
 
 - **settare i remoti nel repo locale:** per settare i remoti si usano i seguenti comandi:
 
-        git remote add mapod4d https://github.com/mapod4d/<nome_repository>.git
+        git remote add mapod4d https://github.com/mapod4d/[nome_repository].git
         git remote set-url --push NOPUSH
 
   questi comandi serviranno a creare una connessione al repository principale soltanto per la _pull_ dei dati.
@@ -30,24 +30,39 @@ Una volta che il nostro ambiente di lavoro è pronto, possiamo iniziare a lavora
 
 1.  inzio creando un branch con il task di progetto
 
-        git branch \<nome_task\>
+        git branch [nome_task]
 
-    a. lavoro sul branch
-    b. faccio add e commit ogni qualvolta raggiungo degli step di lavoro
+    - lavoro sul branch
+    - faccio add e commit ogni qualvolta raggiungo degli step di lavoro
 
-         git add \<nome_file>
-         git commit -m "inserire titolo commit"
+      git add [nome_file + .estensione]
+      git commit -m "[inserire titolo commit]"
 
-    c. finisco di lavorare sulla task
+    - finisco di lavorare sulla task
 
 1.  ritorno al master
 
         git checkout master
 
-1.  git merge [branch] e risolvere conflitti
-1.  git pull mapod4d master
-1.  risolvere conflitti
-1.  git push origin master
+1.  unisco il branch su cui ho lavorato al master
+
+        git merge [branch]
+
+    - risolvere conflitti
+
+1.  scaricare possibili nuovi aggiornamenti dal repo principale
+
+        git pull mapod4d master
+
+    - risolvere conflitti
+
+1.  portare le modifiche al repository forkato
+
+        git push origin master
+
+<!-- ## Giorno 2
+
+#### ciclo di lavoro a inizio task:
 
 ciclo di lavoro giornata con task iniziato:
 (giornata)
@@ -76,4 +91,4 @@ ciclo di lavoro giornata con task finito:
 6a git checkout master
 
 soluzione:
-fetch
+fetch -->
