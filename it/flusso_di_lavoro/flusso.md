@@ -177,4 +177,4 @@ Una volta che il nostro ambiente di lavoro è pronto, possiamo iniziare a lavora
 
 ## Cosa succede ora?
 
-Bisogna accedere a Github ed effettuare la **_Pull Request_** cliccando sul **_Contribute_** e cliccare sul tasto verde **Create Pull Request**. Nella nuova pagina, inserire la task come titolo e poi clicchiamo sul tasto **Open Pull Request**.
+Bisogna accedere a Github ed effettuare la **_Pull Request_** cliccando sul **_Contribute_** e cliccare sul tasto verde **Create Pull Request**. Nella nuova pagina, inserire la task come titolo e poi clicchiamo sul tasto **Create Pull Request**.
