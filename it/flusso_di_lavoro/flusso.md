@@ -2,7 +2,7 @@
 
 Qui di seguito il flusso di lavoro utilizzato dalla community. Tale flusso è obbligatorio, non verranno accettate pull che non lo seguano:
 
-**Prima di iniziare**
+## Prima di iniziare
 
 - **fork del repository principale:** per effettuare il _fork_ un repository basta cliccare sul bottone **_Fork_** in alto a destra della pagina **Github** del _repository_.
 
