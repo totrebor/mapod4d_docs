@@ -96,7 +96,7 @@ Una volta che il nostro ambiente di lavoro è pronto, possiamo iniziare a lavora
 
           git add [nome_file + .estensione]
 
-          git commit -m "[inserire titolo commit]"
+          git commit -m "[inserire_titolo_commit]"
 
     - finisco di lavorare sulla task
 
@@ -140,7 +140,7 @@ Una volta che il nostro ambiente di lavoro è pronto, possiamo iniziare a lavora
 
 1.  unisco il master al branch
 
-        git checkout [nome_branch]
+        git merge master
 
     - lavoro sul branch
     - faccio add e commit ogni qualvolta raggiungo degli step di lavoro
@@ -150,12 +150,6 @@ Una volta che il nostro ambiente di lavoro è pronto, possiamo iniziare a lavora
           git commit -m "[inserire titolo commit]"
 
     - finisco di lavorare sulla task
-
-1.  unisco il master al branch
-
-        git merge master
-
-    - risolvere conflitti
 
 1.  scaricare possibili nuovi aggiornamenti dal repo principale
 
