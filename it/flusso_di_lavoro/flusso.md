@@ -1,6 +1,6 @@
 # GITHUB MAPOD4D
 
-Qui di seguito il flusso di lavoro utilizzato dalla community. Tale flusso è consigliato per evitare conflitti di codice con gli altri membri:
+Qui di seguito il flusso di lavoro utilizzato dalla community. Tale flusso è obbligatorio, non verranno accettate pull che non lo seguano:
 
 **Prima di iniziare**
 
@@ -28,15 +28,75 @@ Una volta che il nostro ambiente di lavoro è pronto, possiamo iniziare a lavora
 
 #### ciclo di lavoro a inizio task:
 
+1.  scaricare possibili nuovi aggiornamenti dal repo principale
+
+        git pull mapod4d master
+
 1.  inzio creando un branch con il task di progetto
 
         git branch [nome_task]
 
+1.  ci spostiamo sul branch:
+
+        git checkout [nome_branch]
+
     - lavoro sul branch
     - faccio add e commit ogni qualvolta raggiungo degli step di lavoro
 
-      git add [nome_file + .estensione]
-      git commit -m "[inserire titolo commit]"
+          git add [nome_file + .estensione]
+
+          git commit -m "[inserire titolo commit]"
+
+    - finisco di lavorare sulla task
+
+1.  ritorno al master
+
+        git checkout master
+
+1.  unisco il branch su cui ho lavorato al master
+
+        git merge [nome_branch]
+
+    - risolvere conflitti
+
+1.  scaricare possibili nuovi aggiornamenti dal repo principale
+
+        git pull mapod4d master
+
+    - risolvere conflitti
+
+1.  portare le modifiche al repository forkato
+
+        git push origin master
+
+## Giorno n
+
+#### ciclo giorni successivi:
+
+1.  scaricare possibili nuovi aggiornamenti dal repo principale
+
+        git pull mapod4d master
+
+    - risolvere conflitti
+
+1.  pulire il lavoro
+
+        git pull --prune
+
+1.  ci spostiamo sul branch
+
+        git checkout [nome_branch]
+
+1.  unisco il master al branch
+
+        git checkout [nome_branch]
+
+    - lavoro sul branch
+    - faccio add e commit ogni qualvolta raggiungo degli step di lavoro
+
+          git add [nome_file + .estensione]
+
+          git commit -m "[inserire titolo commit]"
 
     - finisco di lavorare sulla task
 
@@ -60,35 +120,61 @@ Una volta che il nostro ambiente di lavoro è pronto, possiamo iniziare a lavora
 
         git push origin master
 
-<!-- ## Giorno 2
+## Giorno finale
 
-#### ciclo di lavoro a inizio task:
+#### ciclo giorni successivi:
 
-ciclo di lavoro giornata con task iniziato:
-(giornata)
-1a git pull mapod4d master
-2a risolvere conflitti
-3a git pull --prune
-3a git checkout [branch]
-4a git merge master
-1b lavoro sul branch
-2b add and commit
-3b add and commit
-4b add and commit
-5a git checkout master
-6a git merge [branch] e risolvere conflitti
-7a git pull mapod4d master
-8a risolvere conflitti
-9a git push origin master
+1.  scaricare possibili nuovi aggiornamenti dal repo principale
 
-ciclo di lavoro giornata con task finito:
-1a git pull mapod4d master
-2a risolvere conflitti
-3a git pull --prune
-3a git checkout [branch]
-4a git merge master
-5a git push origin [branch]
-6a git checkout master
+        git pull mapod4d master
 
-soluzione:
-fetch -->
+    - risolvere conflitti
+
+1.  pulire il lavoro
+
+        git pull --prune
+
+1.  ci spostiamo sul branch
+
+        git checkout [nome_branch]
+
+1.  unisco il master al branch
+
+        git checkout [nome_branch]
+
+    - lavoro sul branch
+    - faccio add e commit ogni qualvolta raggiungo degli step di lavoro
+
+          git add [nome_file + .estensione]
+
+          git commit -m "[inserire titolo commit]"
+
+    - finisco di lavorare sulla task
+
+1.  unisco il master al branch
+
+        git merge master
+
+    - risolvere conflitti
+
+1.  scaricare possibili nuovi aggiornamenti dal repo principale
+
+        git fetch mapod4d master
+
+1.  unisco il master remoto di mapod4d al branch
+
+        git merge mapod4d/master
+
+    - risolvere conflitti
+
+1.  portare le modifiche al repository forkato
+
+        git push origin [nome_branch]
+
+1.  unisco il master al branch
+
+        git checkout master
+
+## Cosa succede ora?
+
+Bisogna accedere a Github ed effettuare la **_Pull Request_** cliccando sul **_Contribute_** e cliccare sul tasto verde **Create Pull Request**. Nella nuova pagina, inserire la task come titolo e poi clicchiamo sul tasto **Open Pull Request**.
