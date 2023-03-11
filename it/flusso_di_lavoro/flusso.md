@@ -4,6 +4,8 @@ Qui di seguito il flusso di lavoro utilizzato dalla community. Tale flusso è ob
 
 ## Prima di iniziare
 
+- **Creare un'aria di lavoro:** se non si ha già un'area di lavoro, crearne una. Questa servirà a mettere tutte cartelle che si utilizzeranno per i lavori della community (Es.: _area_lavoro_).
+
 - **fork del repository principale:** per effettuare il _fork_ un repository basta cliccare sul bottone **_Fork_** in alto a destra della pagina **Github** del _repository_.
 
 - **prendere il link del repository forkato:** dopo aver forkato il _repository_ principale, comparirà nella lista dei _repositories_ dell'account utente il _repository_ forkato. Accedendo alla pagina potrete copiare il link dall menú a tendina che si aprirà premendo il tasto verde "**Code**".
@@ -18,7 +20,7 @@ Qui di seguito il flusso di lavoro utilizzato dalla community. Tale flusso è ob
 - **settare i remoti nel repo locale:** per settare i remoti si usano i seguenti comandi:
 
         git remote add mapod4d https://github.com/mapod4d/[nome_repository].git
-        git remote set-url --push NOPUSH
+        git remote set-url --push mapod4d NOPUSH
 
   questi comandi serviranno a creare una connessione al repository principale soltanto per la _pull_ dei dati.
 
@@ -40,7 +42,7 @@ Una volta che il nostro ambiente di lavoro è pronto, possiamo iniziare a lavora
 
         git checkout [nome_branch]
 
-    - lavoro sul branch
+    - lavorare sui nostri file
     - faccio add e commit ogni qualvolta raggiungo degli step di lavoro
 
           git add [nome_file + .estensione]
@@ -79,7 +81,7 @@ Una volta che il nostro ambiente di lavoro è pronto, possiamo iniziare a lavora
 
     - risolvere conflitti
 
-1.  pulire il lavoro
+1.  pulire la cache del repository
 
         git pull --prune
 
@@ -89,7 +91,7 @@ Una volta che il nostro ambiente di lavoro è pronto, possiamo iniziare a lavora
 
 1.  unisco il master al branch
 
-        git checkout [nome_branch]
+        git merge master
 
     - lavoro sul branch
     - faccio add e commit ogni qualvolta raggiungo degli step di lavoro
@@ -163,9 +165,13 @@ Una volta che il nostro ambiente di lavoro è pronto, possiamo iniziare a lavora
 
         git push origin [nome_branch]
 
-1.  unisco il master al branch
+1.  mi sposto nuovamente sul branch
 
         git checkout master
+
+<!-- dovremmo eliminare il branch, dove inserirlo? -->
+<!-- costringe a toccare le impostazioni di github -->
+<!-- secondo me va continuato il ciclo di merge e pull dal master -->
 
 ## Cosa succede ora?
 
