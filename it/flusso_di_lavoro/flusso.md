@@ -122,8 +122,6 @@ Una volta che il nostro ambiente di lavoro è pronto, possiamo iniziare a lavora
 
 ## Giorno finale
 
-#### ciclo giorni successivi:
-
 1.  scaricare possibili nuovi aggiornamenti dal repo principale
 
         git pull mapod4d master
