@@ -4,7 +4,7 @@ Qui di seguito il flusso di lavoro utilizzato dalla community. Tale flusso è ob
 
 ## Prima di iniziare
 
-- **Creare un'aria di lavoro:** se non si ha già un'area di lavoro, crearne una. Questa servirà a mettere tutte cartelle che si utilizzeranno per i lavori della community (Es.: _area_lavoro_).
+- **Creare un'aria di sviluppo:** se non si ha già un'area di lavoro, crearne una. Questa servirà a mettere tutte cartelle che si utilizzeranno per i lavori della community (Es.: _area_sviluppo_).
 
 - **fork del repository principale:** per effettuare il _fork_ un repository basta cliccare sul bottone **_Fork_** in alto a destra della pagina **Github** del _repository_.
 
@@ -20,9 +20,8 @@ Qui di seguito il flusso di lavoro utilizzato dalla community. Tale flusso è ob
 - **settare i remoti nel repo locale:** per settare i remoti si usano i seguenti comandi:
 
         git remote add mapod4d https://github.com/mapod4d/[nome_repository].git
-        git remote set-url --push mapod4d NOPUSH
 
-  questi comandi serviranno a creare una connessione al repository principale soltanto per la _pull_ dei dati.
+  questi comandi serviranno a creare una connessione al repository principale soltanto per la _pull_ dei dati. **ATTENZIONE:** se sei amministratore, settare la push su NO PUSH (vedi riferimenti alla sezione **Sei Amministratore?**)
 
 Una volta che il nostro ambiente di lavoro è pronto, possiamo iniziare a lavorare alle nostre task.
 
@@ -133,3 +132,12 @@ Bisogna accedere a Github ed effettuare la **_Pull Request_** cliccando sul **_C
 ### Che farne del branch dove abbiamo lavorato?
 
 Prima di eliminare il branch su cui abbiamo lavorato, dobbiamo aspettare che ci venga data la conferma dell'avvenuta accettazione della **_Pull Request_**.
+
+### Sei Amministratore?
+
+- **settare i remoti nel repo locale:** per settare i remoti si usano i seguenti comandi:
+
+        git remote add mapod4d https://github.com/mapod4d/[nome_repository].git
+        git remote set-url --push mapod4d NOPUSH
+
+  questi comandi serviranno a creare una connessione al repository principale soltanto per la _pull_ dei dati.
